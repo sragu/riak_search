@@ -13,6 +13,6 @@
                   analysis_pb,
                   text_analyzers]},
   {registered,   [qilr_analyzer_sup, qilr_analyzer_monitor]},
-  {applications, [kernel, stdlib, sasl]},
+  {applications, [kernel, stdlib, sasl, icu4e]},
   {env, [{analysis_port, 6095}]},
   {mod, {qilr_app, []}}]}.
