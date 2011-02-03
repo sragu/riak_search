@@ -44,12 +44,13 @@ cat > rel/vars.config <<EOF
 {analyzer_port,     6095}.
 {sasl_error_log, "%{_localstatedir}/log/%{appname}/sasl-error.log"}.
 {sasl_log_dir, "%{_localstatedir}/log/%{appname}/sasl"}.
-{mapred_queue_dir, "%{_localstatedir}/lib/%{name}/mr_queue"}.
+{mapred_queue_dir, "%{_localstatedir}/lib/%{appname}/mr_queue"}.
 {map_js_vms,   8}.
 {reduce_js_vms, 6}.
 {hook_js_vms, 2}.
 % vm.args
 {node,         "riak@127.0.0.1"}.
+{crash_dump,   "%{_localstatedir}/log/%{appname}/erl_crash.dump"}.
 % bin/riak*
 {runner_script_dir,  "/usr/sbin"}.
 {runner_base_dir,    "%{riak_lib}"}.

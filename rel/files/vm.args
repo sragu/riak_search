@@ -21,3 +21,6 @@
 
 ## Enable memory instrumentation
 ##-instr
+
+## Set the location of crash dumps
+-env ERL_CRASH_DUMP {{crash_dump}}
